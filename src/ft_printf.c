@@ -6,20 +6,37 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:03 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/19 14:57:27 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:14:20 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../include/ft_printf.h"
 
 int	ft_printf(const char *entry, ...);
 
 int	ft_printf(const char *entry, ...)
 {
-	const char *temp;
+	va_list args;
+	va_start(args, entry);
+	int n;
+	char *ptr;
+
+	n = 0;
+	while (entry[n])
+	{
+		if (entry[n] == '%' && ft_strchr("cspdiuxX%", entry[n + 1]))
+			ptr = va_arg(args, char *);
+			printf("ptr = %s\n", ptr);
+			
+			
+		n++;
+		
+	}
 	
-	temp = malloc((sizeof (char)) * 1);
-	temp = entry;
+
+	va_end(args);
+	
+	
 	
 	return(0);
 }

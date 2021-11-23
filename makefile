@@ -5,7 +5,7 @@ INCLUDE 	= ./include
 BIN	 		= ./bin
 OBJ 		= ./obj
 MAIN		= ./main
-LIBFT 		= ./libft
+LIBFT 		= libft/libft.a 
 
 CC 			= gcc
 CFLAGS 		= -Wall -Wextra -Werror
@@ -17,7 +17,7 @@ lib:
 	make -C $(LIBFT) 
 
 run:
-	./bin
+	$(CC) $(MAIN)/testes.c $(SRC)/*.c  $(LIBFT) -I $(INCLUDE) -o $(BIN)/test && $(BIN)/test
 
 libed: ft_printf.o
 

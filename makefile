@@ -22,7 +22,7 @@ run: $(NAME)
 
 libed: ft_printf.o ft_putchar.o ft_puthexa_caps.o ft_puthexa.o ft_putnbr_u.o ft_putnbr.o ft_putstr.o ft_putpointer.o
 
-$(NAME): lib libed
+$(NAME): libed lib
 	@cp libft/libft.a ./$(NAME)
 	@ar rc $(NAME) $(OBJ)/*.o
 	@echo "ar: creating archive libftprintf.a"

@@ -5,7 +5,7 @@ INCLUDE 	= ./include
 BIN	 		= ./bin
 OBJ 		= ./obj
 MAIN		= ./main
-LIBFT 		= libft/libft.a 
+LIBFT 		= ./libft
 
 CC 			= gcc
 CFLAGS 		= -Wall -Wextra -Werror

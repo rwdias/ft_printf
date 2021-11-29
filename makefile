@@ -5,7 +5,8 @@ INCLUDE 	= ./include
 BIN	 		= ./bin
 OBJ 		= ./obj
 MAIN		= ./main
-LIBFT 		= ./libft
+LIBFT 		= libft/libft.a 
+LIB_		= ./libft
 
 CC 			= gcc
 CFLAGS 		= -Wall -Wextra -Werror
@@ -14,7 +15,7 @@ all: lib libed
 
 lib:
 	@echo "Compiling: libft"
-	make -C $(LIBFT) 
+	make -C $(LIB_) 
 
 run:
 	$(CC) $(MAIN)/testes.c $(SRC)/*.c  $(LIBFT) -I $(INCLUDE) -o $(BIN)/test && $(BIN)/test

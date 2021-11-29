@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/29 11:36:57 by rapareci          #+#    #+#             */
+/*   Updated: 2021/11/29 11:36:58 by rapareci         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
-# define	LIBFT_H
+# define LIBFT_H
 # include <stdio.h> 
 # include <stddef.h> 
 # include <unistd.h>
@@ -39,7 +51,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_tolower(int arg);
-
 void	ft_putchar_fd(char c, int fd);
 
 #endif

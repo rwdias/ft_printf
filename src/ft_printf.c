@@ -47,9 +47,9 @@ int	ft_printf(const char *entry, ...)
 	int count;
 	int n;
 
-	n = 0;
 	count = 0;
-	while (entry[n] != '\0')
+	n = 0;
+	while (entry[n])
 	{
 		if (entry[n] == '%' && ft_strchr("cspdiuxX%", entry[n + 1]))
 		{

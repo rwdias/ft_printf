@@ -18,6 +18,7 @@ lib:
 	make re -C $(LIB_) 
 
 run: $(NAME)
+	@mkdir -p bin
 	$(CC) $(CFLAGS) $(MAIN)/testes.c $(NAME) -I $(INCLUDE) -o $(BIN)/test && $(BIN)/test
 
 libed: ft_printf.o ft_putchar.o ft_puthexa_caps.o ft_puthexa.o ft_putnbr_u.o ft_putnbr.o ft_putstr.o ft_putpointer.o
@@ -31,6 +32,7 @@ $(NAME): libed lib
 
 %.o: $(SRC)/%.c $(INCLUDE)/ft_printf.h
 	@echo "Compiling: $<"
+	@mkdir -p obj
 	@$(CC) $(CFLAGS) -c $< -I $(INCLUDE) -o $(OBJ)/$@ 
 	
 clean:

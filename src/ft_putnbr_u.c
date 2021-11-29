@@ -6,7 +6,7 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 12:51:56 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/28 12:57:16 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/29 16:45:58 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 int	ft_putnbr_u(unsigned int nb)
 {
-	if (nb < 0)
-	{
-		nb = -nb;
-	}
 	if (nb >= 10)
 	{
 		ft_putnbr(nb / 10);

@@ -17,10 +17,10 @@ lib:
 	@echo "Compiling: libft"
 	make re -C $(LIB_) 
 
-run:
-	$(CC) $(MAIN)/testes.c $(NAME) -I $(INCLUDE) -o $(BIN)/test && $(BIN)/test
+run: $(NAME)
+	$(CC) $(CFLAGS) $(MAIN)/testes.c $(NAME) -I $(INCLUDE) -o $(BIN)/test && $(BIN)/test
 
-libed: ft_printf.o ft_putchar.o ft_puthexa_caps.o ft_puthexa.o ft_putnbr_u.o ft_putnbr.o ft_putstr.o
+libed: ft_printf.o ft_putchar.o ft_puthexa_caps.o ft_puthexa.o ft_putnbr_u.o ft_putnbr.o ft_putstr.o ft_putpointer.o
 
 $(NAME): lib libed
 	@cp libft/libft.a ./$(NAME)

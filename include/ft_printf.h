@@ -6,7 +6,7 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:34 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/29 11:38:34 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/29 15:26:43 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,7 @@ int	ft_puthexa(long int n);
 int	ft_puthexa_caps(long int n);
 int	ft_putstr(char *str);
 int	ft_putnbr_u(unsigned int nb);
+int	ft_putpointer(void *nbr, char *base);
+
 
 #endif

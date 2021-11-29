@@ -6,7 +6,7 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:03 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/29 11:36:42 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/29 15:27:37 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	main(void)
 {
-	ft_printf("teste = %u, %d, bla, %d", 675858, 2, 989);
+	ft_printf("teste = %p, %d, bla, %d", 675858, 2, 989);
 }

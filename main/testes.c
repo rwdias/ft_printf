@@ -6,7 +6,7 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:03 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/23 20:14:03 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:39:39 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int main (void)
 {
 	// int a = test(4, 1, 2, 3, 4);
-	ft_printf("teste = %d, %d", "amo que amo", "oi");
+	ft_printf("teste = %%, %d, bla, %d", 675858, 2, 989);
 
 
 	

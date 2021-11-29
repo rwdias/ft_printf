@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 20:09:08 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/28 14:12:06 by rapareci         ###   ########.fr       */
+/*   Created: 2021/11/28 12:02:00 by rapareci          #+#    #+#             */
+/*   Updated: 2021/11/28 14:22:55 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_printf.h"
 
-int	ft_putchar(char c);
-
-int	ft_putchar(char c)
+int	ft_putstr(char *str)
 {
-	write(1, &c, 1);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
 	return (0);
 }

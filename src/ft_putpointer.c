@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putpointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:48:48 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/29 15:26:28 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:19:59 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_printf.h"
+
 static int	count_hex(unsigned long n)
 {
 	int	i;
@@ -57,23 +58,3 @@ int	ft_putpointer(void *nbr, char *base)
 	free(str);
 	return (len);
 }
-
-// int ft_putpointer(void *nbr)
-// {
-// 	// char *ptr = malloc(sizeof(char) * 15);
-
-// 	// ptr ==&nbr;
-
-// 	ft_putstr(&nbr);
-// 	// free(ptr);
-// 	return (0);
-// }
-
-// int main(void)
-// {
-	
-// 	int a = 2343;
-	
-// 	ft_putpointer(a);
-// 	return (0);
-// }

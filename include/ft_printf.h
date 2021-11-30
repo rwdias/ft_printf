@@ -3,16 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:34 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/29 15:26:43 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:19:01 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# if __APPLE__
+#  define IS_MACOS 1
+# else
+#  define IS_MACOS 0
+# endif
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -31,6 +36,5 @@ int	ft_puthexa_caps(long int n);
 int	ft_putstr(char *str);
 int	ft_putnbr_u(unsigned int nb);
 int	ft_putpointer(void *nbr, char *base);
-
 
 #endif

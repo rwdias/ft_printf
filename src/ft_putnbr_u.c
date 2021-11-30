@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_u.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 12:51:56 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/29 16:45:58 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:21:02 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 int	ft_putnbr_u(unsigned int nb)
 {
+	int	len;
+
+	len = 0;
 	if (nb >= 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		len += ft_putnbr(nb / 10);
+		len += ft_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(nb + '0');
-	return (0);
+		len += ft_putchar(nb + '0');
+	return (len);
 }

@@ -3,24 +3,46 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 12:02:00 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/28 14:22:55 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/11/30 16:55:06 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_printf.h"
 
+// int	ft_putstr(char *str)
+// {
+// 	int	i;
+
+// 	i = 0;
+// 	while (str[i] != '\0')
+// 	{	
+// 		if (!str)
+// 		{
+// 			write (1, "(null)", 6);
+// 			return (6);
+// 		}
+// 		else
+// 		{
+// 			ft_putchar(str[i]);
+// 			i++;
+// 		}
+// 	}
+// 	free (str);
+// 	return (i);
+// }
 int	ft_putstr(char *str)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	while (str[i] != '\0')
+	if (!str)
 	{
-		ft_putchar(str[i]);
-		i++;
+		write (1, "(null)", 6);
+		return (6);
 	}
-	return (0);
+	len = ft_strlen(str);
+	write (1, str, len);
+	return (len);
 }

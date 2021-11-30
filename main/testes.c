@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:03 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/30 16:03:26 by coder            ###   ########.fr       */
+/*   Updated: 2021/11/30 16:52:41 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	main(void)
 {
-	ft_printf("teste = %p, %d, bla, %d", 675858, 2, 989);
+	ft_printf("teste = a", 1);
+	ft_printf("%s", null_str);
 	return (0);
 }

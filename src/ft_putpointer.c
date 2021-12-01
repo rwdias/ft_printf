@@ -6,7 +6,19 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:48:48 by rapareci          #+#    #+#             */
-/*   Updated: 2021/12/01 18:07:32 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/12/01 18:14:29 by rapareci         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putpointer.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/29 14:48:48 by rapareci          #+#    #+#             */
+/*   Updated: 2021/12/01 17:42:20 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +58,7 @@ static char	*hex_to_str(unsigned long n, char *base)
 	return (hex);
 }
 
-int	ft_putpointer(void *nbr)
+int	ft_putpointer(void *nbr, char *base)
 {
 	int				len;
 	char			*str;

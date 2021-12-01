@@ -6,7 +6,7 @@
 /*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:48:48 by rapareci          #+#    #+#             */
-/*   Updated: 2021/12/01 17:44:53 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/12/01 17:42:20 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	count_hex(unsigned long n)
 	return (i);
 }
 
-static char	*hex_to_str(unsigned long n)
+static char	*hex_to_str(unsigned long n, char *base)
 {
 	int		size;
 	char	*hex;
@@ -39,7 +39,8 @@ static char	*hex_to_str(unsigned long n)
 	hex[size] = '\0';
 	while (size > 0)
 	{
-		hex[size - 1] = ft_puthexa(n);
+		hex[size - 1] = base[n % 16];
+		n = n / 16;
 		size--;
 	}
 	return (hex);
@@ -52,7 +53,7 @@ int	ft_putpointer(void *nbr)
 	unsigned long	n;
 
 	n = (unsigned long)nbr;
-	str = hex_to_str(n);
+	str = hex_to_str(n, base);
 	len = ft_putstr(str);
 	free(str);
 	return (len);

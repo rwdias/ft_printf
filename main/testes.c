@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   testes.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:03 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/30 16:52:41 by coder            ###   ########.fr       */
+/*   Updated: 2021/12/01 17:38:10 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	main(void)
 {
-	ft_printf("teste = a", 1);
-	ft_printf("%s", null_str);
+	ft_printf(" %p ", 999);
 	return (0);
 }

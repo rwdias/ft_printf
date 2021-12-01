@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 19:07:34 by rapareci          #+#    #+#             */
-/*   Updated: 2021/11/30 17:19:01 by coder            ###   ########.fr       */
+/*   Updated: 2021/12/01 17:32:45 by rapareci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ int	ft_puthexa(long int n);
 int	ft_puthexa_caps(long int n);
 int	ft_putstr(char *str);
 int	ft_putnbr_u(unsigned int nb);
-int	ft_putpointer(void *nbr, char *base);
+int	ft_putpointer(void *nbr);
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putpointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rapareci <rapareci@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:48:48 by rapareci          #+#    #+#             */
-/*   Updated: 2021/12/01 18:14:29 by rapareci         ###   ########.fr       */
+/*   Updated: 2021/12/01 23:24:01 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,16 @@ int	ft_putpointer(void *nbr, char *base)
 	char			*str;
 	unsigned long	n;
 
+	len = 0;
+	if (!IS_MACOS && !nbr)
+	{
+		len += ft_putstr("(nil)");
+		return (len);
+	}
+	len += ft_putstr("0x");
 	n = (unsigned long)nbr;
 	str = hex_to_str(n, base);
-	len = ft_putstr(str);
+	len += ft_putstr(str);
 	free(str);
 	return (len);
 }

@@ -31,7 +31,8 @@ int	ft_return(const char *entry, va_list arg, int n)
 	else if (entry[n + 1] == 'X')
 		return (ft_puthexa_caps(va_arg(arg, unsigned int)));
 	else if (entry[n + 1] == 'p')
-		return (ft_putstr("0x") + ft_putpointer(va_arg(arg, void *)));
+		return (ft_putstr("0x") + ft_putpointer(va_arg(arg, void *), \
+				"0123456789abcdef"));
 	else
 		return (0);
 }
